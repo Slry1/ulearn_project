@@ -1,201 +1,190 @@
-<!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Навыки</title>
-        <link rel="stylesheet" href="css/skills.css">
-    </head>
-    <body>
-        <header>
-            <img>
-            <h1>Fullstack-программист</h1>
-        </header>
-        <main>
-            <h2>Популярные навыки</h2>
-            <div class="container">
-                <div>
-                <p>Среди всех профессий самыми популярными являются:</p>
-                <table cellpadding="4" cellspacing="1">
-                    <tr>
-                        <th>Название скилла</th>
-                        <th>Количество упоминаний в вакансиях</th>
-                    </tr>
-                    <tr>
-                        <td>sql</td>
-                        <td>363410</td>
-                    </tr>
-                    <tr>
-                        <td>работа в команде</td>
-                        <td>322282</td>
-                    </tr>
-                    <tr>
-                        <td>git</td>
-                        <td>292286</td>
-                    </tr>
-                    <tr>
-                        <td>английский язык</td>
-                        <td>270844</td>
-                    </tr>
-                    <tr>
-                        <td>javascript</td>
-                        <td>270331</td>
-                    </tr>
-                    <tr>
-                        <td>linux</td>
-                        <td>237230</td>
-                    </tr>
-                    <tr>
-                        <td>грамотная речь</td>
-                        <td>229070</td>
-                    </tr>
-                    <tr>
-                        <td>пользователь пк</td>
-                        <td>225931</td>
-                    </tr>
-                    <tr>
-                        <td>управление проектами</td>
-                        <td>198524</td>
-                    </tr>
-                    <tr>
-                        <td>python</td>
-                        <td>192808</td>
-                    </tr>
-                    <tr>
-                        <td>html</td>
-                        <td>178178</td>
-                    </tr>
-                    <tr>
-                        <td>java</td>
-                        <td>174737</td>
-                    </tr>
-                    <tr>
-                        <td>css</td>
-                        <td>153598</td>
-                    </tr>
-                    <tr>
-                        <td>php</td>
-                        <td>152430</td>
-                    </tr>
-                    <tr>
-                        <td>postgresql</td>
-                        <td>151101</td>
-                    </tr>
-                    <tr>
-                        <td>mysql</td>
-                        <td>146268</td>
-                    </tr>
-                    <tr>
-                        <td>ведение переговоров</td>
-                        <td>138333</td>
-                    </tr>
-                    <tr>
-                        <td>adobe photoshop</td>
-                        <td>134509</td>
-                    </tr>
-                    <tr>
-                        <td>ооп</td>
-                        <td>123523</td>
-                    </tr>
-                    <tr>
-                        <td>ms sql</td>
-                        <td>116145</td>
-                    </tr>
-                </table>
-            <img src="img/skill_graph_1.png"></div>
-            <div>
-            <p>Список самых популярных навыков среди профессии Fullstack-программист:</p>
-            <table cellpadding="4" cellspacing="1">
+{% extends 'layout.html' %}
+{% load static %}
+{% block head %}
+	<title>Главная страница</title>
+    <link rel="stylesheet" href="{% static 'css/skills.css' %}">
+{% endblock %}
+{% block content %}
+<header>
+    <img>
+    <h1>Fullstack-программист</h1>
+</header>
+    <main>
+        <h2>Популярные навыки</h2>
+        <div class="container">
+            <div><p>Среди всех профессий самыми популярными являются:</p><table cellpadding="4" cellspacing="1">
                 <tr>
                     <th>Название скилла</th>
                     <th>Количество упоминаний в вакансиях</th>
                 </tr>
                 <tr>
-                    <td>javascript</td>
-                    <td>18026</td>
+                    <td>sql</td>
+                    <td>363410</td>
+                </tr>
+                <tr>
+                    <td>работа в команде</td>
+                    <td>322282</td>
                 </tr>
                 <tr>
                     <td>git</td>
-                    <td>10554</td>
-                </tr>
-                <tr>
-                    <td>php</td>
-                    <td>9104</td>
-                </tr>
-                <tr>
-                    <td>mysql</td>
-                    <td>7549</td>
-                </tr>
-                <tr>
-                    <td>css</td>
-                    <td>6894</td>
-                </tr>
-                <tr>
-                    <td>node.js</td>
-                    <td>6729</td>
-                </tr>
-                <tr>
-                    <td>html</td>
-                    <td>6590</td>
-                </tr>
-                <tr>
-                    <td>postgresql</td>
-                    <td>5746</td>
-                </tr>
-                <tr>
-                    <td>sql</td>
-                    <td>5596</td>
-                </tr>
-                <tr>
-                    <td>react</td>
-                    <td>5186</td>
-                </tr>
-                <tr>
-                    <td>c#</td>
-                    <td>4382</td>
-                </tr>
-                <tr>
-                    <td>html5</td>
-                    <td>4030</td>
-                </tr>
-                <tr>
-                    <td>jquery</td>
-                    <td>3981</td>
-                </tr>
-                <tr>
-                    <td>ооп</td>
-                    <td>3941</td>
-                </tr>
-                <tr>
-                    <td>java</td>
-                    <td>3647</td>
-                </tr>
-                <tr>
-                    <td>python</td>
-                    <td>3537</td>
-                </tr>
-                <tr>
-                    <td>typescript</td>
-                    <td>3353</td>
-                </tr>
-                <tr>
-                    <td>angularjs</td>
-                    <td>3321</td>
+                    <td>292286</td>
                 </tr>
                 <tr>
                     <td>английский язык</td>
-                    <td>3026</td>
+                    <td>270844</td>
                 </tr>
                 <tr>
-                    <td>css3</td>
-                    <td>2927</td>
+                    <td>javascript</td>
+                    <td>270331</td>
                 </tr>
-            </table>
-            <img src="img/skill_graph_2.png"></div>
-        </div>
-        <p>Можно заметить, что для профессии Fullstack-программист превалирующим скиллом является владение javascript, а также другими языками программирования, необходимые для разработки проектов, сайтов</p>
-        </main>
-        <footer>
-            Малышев Тимофей Евгеньевич РИ-220930
-        </footer>
-    </body>
-</html>
+                <tr>
+                    <td>linux</td>
+                    <td>237230</td>
+                </tr>
+                <tr>
+                    <td>грамотная речь</td>
+                    <td>229070</td>
+                </tr>
+                <tr>
+                    <td>пользователь пк</td>
+                    <td>225931</td>
+                </tr>
+                <tr>
+                    <td>управление проектами</td>
+                    <td>198524</td>
+                </tr>
+                <tr>
+                    <td>python</td>
+                    <td>192808</td>
+                </tr>
+                <tr>
+                    <td>html</td>
+                    <td>178178</td>
+                </tr>
+                <tr>
+                    <td>java</td>
+                    <td>174737</td>
+                </tr>
+                <tr>
+                    <td>css</td>
+                    <td>153598</td>
+                </tr>
+                <tr>
+                    <td>php</td>
+                    <td>152430</td>
+                </tr>
+                <tr>
+                    <td>postgresql</td>
+                    <td>151101</td>
+                </tr>
+                <tr>
+                    <td>mysql</td>
+                    <td>146268</td>
+                </tr>
+                <tr>
+                    <td>ведение переговоров</td>
+                    <td>138333</td>
+                </tr>
+                <tr>
+                    <td>adobe photoshop</td>
+                    <td>134509</td>
+                </tr>
+                <tr>
+                    <td>ооп</td>
+                    <td>123523</td>
+                </tr>
+                <tr>
+                    <td>ms sql</td>
+                    <td>116145</td>
+                </tr>
+            </table><img src="{% static 'img/skill_graph_1.png  ' %}"></div><div><p>Список самых популярных навыков среди профессии Fullstack-программист:</p><table cellpadding="4" cellspacing="1">
+            <tr>
+                <th>Название скилла</th>
+                <th>Количество упоминаний в вакансиях</th>
+            </tr>
+            <tr>
+                <td>javascript</td>
+                <td>18026</td>
+            </tr>
+            <tr>
+                <td>git</td>
+                <td>10554</td>
+            </tr>
+            <tr>
+                <td>php</td>
+                <td>9104</td>
+            </tr>
+            <tr>
+                <td>mysql</td>
+                <td>7549</td>
+            </tr>
+            <tr>
+                <td>css</td>
+                <td>6894</td>
+            </tr>
+            <tr>
+                <td>node.js</td>
+                <td>6729</td>
+            </tr>
+            <tr>
+                <td>html</td>
+                <td>6590</td>
+            </tr>
+            <tr>
+                <td>postgresql</td>
+                <td>5746</td>
+            </tr>
+            <tr>
+                <td>sql</td>
+                <td>5596</td>
+            </tr>
+            <tr>
+                <td>react</td>
+                <td>5186</td>
+            </tr>
+            <tr>
+                <td>c#</td>
+                <td>4382</td>
+            </tr>
+            <tr>
+                <td>html5</td>
+                <td>4030</td>
+            </tr>
+            <tr>
+                <td>jquery</td>
+                <td>3981</td>
+            </tr>
+            <tr>
+                <td>ооп</td>
+                <td>3941</td>
+            </tr>
+            <tr>
+                <td>java</td>
+                <td>3647</td>
+            </tr>
+            <tr>
+                <td>python</td>
+                <td>3537</td>
+            </tr>
+            <tr>
+                <td>typescript</td>
+                <td>3353</td>
+            </tr>
+            <tr>
+                <td>angularjs</td>
+                <td>3321</td>
+            </tr>
+            <tr>
+                <td>английский язык</td>
+                <td>3026</td>
+            </tr>
+            <tr>
+                <td>css3</td>
+                <td>2927</td>
+            </tr>
+        </table><img src="{% static 'img/skill_graph_2.png' %}"></div></div><p>Можно заметить, что для профессии Fullstack-программист превалирующим скиллом является владение javascript, а также другими языками программирования, необходимые для разработки проектов, сайтов</p>
+    </main>
+    <footer>
+        Малышев Тимофей Евгеньевич РИ-220930
+    </footer>
+{% endblock %}
