@@ -1,3 +1,11 @@
+body{
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1{
+    text-align: center;
+    margin: 0;
+}
 aside{
     float: left;
     background: #181818;
@@ -21,7 +29,7 @@ aside ul li{
     transition: transform .5s ease;
     text-decoration: none;
 }
-aside img{
+aside .img{
     width: 25px;
     float: left;
     margin-right: 2px;
@@ -34,6 +42,6 @@ aside ul li:hover, aside ul a:hover{
     text-decoration: none;
     transform: scale(1.05);
 }
-body{
-    margin: 0;
+.nav-header{
+    text-align: left;
 }

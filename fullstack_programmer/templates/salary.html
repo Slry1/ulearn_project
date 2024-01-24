@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block head %}
+	<title>Главная страница</title>
+    <link rel="stylesheet" href="{% static 'css/skills.css' %}">
+{% endblock %}
+{% block content %}
+    <header>
+    <h1><img class="logo" src="{% static 'img/fs.png' %}"><br>Fullstack-программист</h1>
+</header>
+    <main>
+        <h2>Востребованность</h2>
+        <H3>Динамика уровня зарплат</H3>
+    <div class="container">
+            <div><p>Средний уровень зарплат для всех профессий по годам:</p><table>
+                <tr>
+                    <th>Год</th>
+                    <th>Средняя зарплата</th>
+                </tr>
+                {% for i in prof %}
+                    <tr>
+                        <td>{{ i.year }}</td>
+                        <td>{{ i.salary }}</td>
+                    </tr>
+                {% endfor %}
+            </table><img class="graph" src="{% static 'img/zp_prof.png  ' %}"></div><div><p>Средний уровень зарплат для Fullstack-программиста по годам:</p><table>
+            <tr>
+                <th>Год</th>
+                <th>Средняя зарплата</th>
+            </tr>
+                {% for i in fs %}
+                    <tr>
+                        <td>{{ i.year }}</td>
+                        <td>{{ i.salary }}</td>
+                    </tr>
+                {% endfor %}
+        </table><img class="graph" src="{% static 'img/zp_fsprog.png' %}"></div></div>
+    <H3>Динамика количества вакансий</H3>
+    <div class="container">
+            <div><p>Количество вакансий по годам:</p><table>
+                <tr>
+                    <th>Год</th>
+                    <th>Кол-во вакансий</th>
+                </tr>
+                {% for i in vac %}
+                    <tr>
+                        <td>{{ i.year }}</td>
+                        <td>{{ i.count }}</td>
+                    </tr>
+                {% endfor %}
+            </table><img class="graph" src="{% static 'img/vacancy_prof.png  ' %}"></div><div><p>Количество вакансий по годам для Fullstack-программиста:</p><table>
+            <tr>
+                <th>Год</th>
+                <th>Кол-во вакансий</th>
+            </tr>
+                {% for i in vac_fs %}
+                    <tr>
+                        <td>{{ i.year }}</td>
+                        <td>{{ i.count }}</td>
+                    </tr>
+                {% endfor %}
+        </table><img class="graph" src="{% static 'img/vacancy_fs.png' %}"></div></div>
+    </main>
+    <footer>
+        Малышев Тимофей Евгеньевич РИ-220930
+    </footer>
+{% endblock %}

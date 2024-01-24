@@ -2,21 +2,19 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-
+        <link rel="stylesheet" href="{% static 'css/layout.css' %}">
         <meta charset="utf-8">
         {% block head %}{% endblock %}
-        <link rel="stylesheet" href="{% static 'css/layout.css' %}">
-
     </head>
     <body>
     <aside class='navigation'>
-        <h3><img src="{% static 'img/bars-solid.svg' %}">Навигация</h3>
+        <h3 class ='nav-header'><img class="img" src="{% static 'img/bars-solid.svg' %}">Навигация</h3>
         <ul>
-            <a href="{% url 'home' %}"><li><img src="{% static 'img/house-solid.svg' %}">Главная</li></a>
-            <a href=""><li><img src="{% static 'img/users-line-solid.svg' %}">Востребованность</li></a>
-            <a href=""><li><img src="{% static 'img/map-solid.svg'%}">География</li></a>
-            <a href="{% url 'skills' %}"><li><img src="{% static 'img/lightbulb-regular.svg'%}">Навыки</li></a>
-            <a href=""><li><img src="{% static 'img/newspaper-regular.svg'%}">Последние вакансии</li></a>
+            <a href="{% url 'home' %}"><li><img class="img" src="{% static 'img/house-solid.svg' %}">Главная</li></a>
+            <a href="{% url 'salary' %}"><li><img class="img" src="{% static 'img/users-line-solid.svg' %}">Востребованность</li></a>
+            <a href=""><li><img class="img" src="{% static 'img/map-solid.svg'%}">География</li></a>
+            <a href="{% url 'skills' %}"><li><img class="img" src="{% static 'img/lightbulb-regular.svg'%}">Навыки</li></a>
+            <a href=""><li><img class="img" src="{% static 'img/newspaper-regular.svg'%}">Последние вакансии</li></a>
         </ul>
     </aside>
         {% block content %}

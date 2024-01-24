@@ -1,3 +1,11 @@
-body{
-
+.logo{
+    width: 200px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin: 0;
+}
+.fs-skills{
+    padding-left: 25%;
 }

@@ -2,17 +2,16 @@
 {% load static %}
 {% block head %}
 	<title>Главная страница</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href={% static 'css/index.css' %}>
 {% endblock %}
 {% block content %}
 <header>
-    <img>
-    <h1>Fullstack-программист</h1>
+    <h1><img class="logo" src="{% static 'img/fs.png' %}"><br>Fullstack-программист</h1>
 </header>
 <main>
     <p>Fullstack-программист - это специалист в области программирования, который обладает знаниями и навыками как на стороне клиента (frontend), так и на стороне сервера (backend) веб-приложения. Эта профессия требует широкого спектра компетенций, чтобы разрабатывать и поддерживать веб-приложения от начала до конца.</p>
     <br>Основные обязанности fullstack-программиста включают в себя:
-    <ol>
+    <ol class="fs-skills">
         <li>
             <strong>Frontend-разработка:</strong>
             <ul>
